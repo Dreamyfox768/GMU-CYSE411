@@ -34,13 +34,13 @@ If authorization validation is missing, users may manipulate the parameter to ac
 
 # 3. Specific Threat Challenge
 
-**Type of Threat:** Information Disclosure (Confidentiality Violation)
-
-Students must identify how a malicious user could manipulate the `id` parameter to access tickets belonging to other users.
+Instructions for Students:
+1.	Locate the Vulnerability: Identify where the system fails to validate authorization when data crosses the Trust Boundary.
+2.	Analyze the Mechanism: Explain how an attacker can manipulate entry points (like query parameters) to access data they should not have access to.
 
 ---
 
-# 4. Threat Enumeration Table (Student)
+# 4. Threat Enumeration (Student)
 
 | Field | Description |
 |------|-------------|
@@ -57,7 +57,7 @@ Students must identify how a malicious user could manipulate the `id` parameter 
 
 | Field | Description |
 |------|-------------|
-| Actor | Authenticated malicious user |
+| Actor | An authenticated malicious user with legitimate access to the portal, but with the intent to access others' data.|
 | Prerequisites | Legitimate access to the portal |
 | Actions | Modify the `id` parameter in the request |
 | Consequence | Access to other users’ tickets |
